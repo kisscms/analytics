@@ -1,3 +1,4 @@
+<? if( !empty($config['analytics']['account']) ){ ?>
 <script type="text/javascript" data-type="require">
 	var _gaq=[["_setAccount","<?=$config['analytics']['account']?>"],["_trackPageview"]];
 <? if( !empty($config['analytics']['domain_name']) ){ ?>
@@ -10,3 +11,4 @@
 		var s = document.getElementsByTagName(t)[0]; s.parentNode.insertBefore(js, s);
 	})(document,"script");
 </script>
+<? } ?>
